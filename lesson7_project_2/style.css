@@ -1,0 +1,174 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* --------------------------- HTML TAG STYLES ----------------------------- */
+body{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.5em;
+}
+h1 {
+  padding: 20px 0;
+  color: #B980FC;
+}
+h2 {
+  padding: 20px 0;
+  color: #000;
+}
+h4 {
+  padding: 0px 0;
+  font-weight: bold;
+  color:#DC1F6A;
+}
+table {
+	border: solid #6297F9 1px;
+	border-collapse:collapse;
+}
+td {
+	padding: 6px;
+	border: solid #6297F9 1px;
+}
+th {
+	font-weight: bold;
+	background-color: #6297F9;
+	text-align: center;
+	padding: 6px;
+	border: solid #6297F9 1px;
+}
+a:link {
+	color: #6297F9;
+}
+a:visited {
+	color: #6297F9;
+}
+a:hover {
+	color: #4578DF;
+	text-decoration: none;
+}
+
+/* -------------------------- PAGE SECTIONS ---------------------------- */
+/* Visual sections of page are defined below in order of presentation */
+
+#splash{
+    height: 348px;
+    background: url(images/coding_pixels.png) no-repeat center top fixed;
+    background-size: contain;
+}
+
+#overview{
+    background-color: #171717;
+}
+
+#media{
+    background-color: #bfbfbf;
+    background: url(images/what_is_mis.png) no-repeat center top;
+    background-size: cover;
+}
+
+#references{
+    background-color: #B8A94F;
+}
+
+#footer{
+    background-color: #DC1F6A;
+}
+.container {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* ---------------- CONTAINER STYLES ----------------- */
+/* Containers are used to keep the page content within bounds centered in the browser window. */
+.container {
+  width: 960px; /* static width container always stays at this width no matter what the window size */
+  margin: 0 auto;
+  overflow: hidden;
+}
+.half_container { /* provides a two column presentation */
+  width: 50%;
+  float: left;
+  overflow: hidden;
+}
+
+/* ----------------- NAVIGATION BAR STYLES -------------------*/ 
+
+#navbar{
+	position: fixed; /* navbar should always be shown even when page is scrolled */
+	top: 0;
+	width: 100%;
+	height: 68px;
+	background-color: rgba(0, 0, 0, 0.8); 
+}	
+/* horizontal menu bars are typically created using a styled unordered list. Here's how! */
+ul#menu {
+	list-style: none; /* eliminates bullets */
+	/* adjust padding top to adjust nav bar vertical position */
+	padding-top: 0px;
+} 
+ul#menu li {
+	float: left; /* changes list from vertical to horizontal */
+	padding-bottom: 20px;
+} 
+ul#menu li a.button {
+	font-size: 24px;
+	text-decoration: none;
+	/* this padding defines the size of the buttons */
+	padding: 20px 100px 20px 100px;
+	color: #B8A94F;
+}
+/* change button color when mouse hovers over */
+ul#menu li a.button:hover {
+	background-color: rgba(255, 255, 0, 0.2);
+}  
+/* ---------------- TITLE PAGE STYLES ------------------- */
+
+#title-page{
+  width: 100%;
+  padding-top: 30px; /* provides a lot of space above title to view the background image */
+  color: #B980FC;
+  text-align: center;
+}
+#title-page h1 {
+  font-family: 'Amaranth', sans-serif; /* Amaranth is a Google Font - see link in head of index.html */
+  font-size: 60px; 	
+  text-shadow: 5px 5px #000; /* Shadow helps text to stand out from background */
+}
+#title-page h3 {
+  font-size: 30px;
+  font-style: italic;
+  margin: 0 40px;
+  padding-bottom: 30px;
+  text-shadow: 4px 4px #000;
+  text-align: right;
+}
+
+/* ------------------- FOOTER CREDITS --------------------- */
+
+#credits {
+  text-align: center;	
+}
+#credits table{      
+  margin: 0 auto;		/* centers the color palette table */
+}
+#credits p {
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+/* ---------------------- MISC -----------------------------*/
+
+.fltright{
+	float:right;
+	margin: 20px;
+}
+.fltleft{
+	float:left;
+	margin: 20px 20px 20px 0;
+}
